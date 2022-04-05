@@ -9,7 +9,7 @@ for ports in ports:
 #searching time (depends on the network)
     client.settimeout(0.1)
 #client connect to the local and the port (answer 0 is correct), could be the domain or the IP
-#bancocn.com is the Solyd course site for pentest
+#include de name of the site
     cod = client.connect_ex(('sitename.com', ports))
     if cod == 0:
         print (ports, 'Open')
